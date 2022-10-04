@@ -8,16 +8,31 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <header>
-            <h1>Etch A Sketch</h1>
-            <div>
-                <button>Squares</button>
-                <button>Reset</button>
-                <button>Color</button>
+        <div id="header">
+            <h1>Etch-a-Sketch</h1>
+            <div id="form" class="form">
+                <p>New Grid Size:</p><input type="text" id="user-number" class="user-number">
+                <p id="copy-input"></p>
+                <button id="user-submit" class="user-submit">Sumbit</button>
             </div>
-        </header>
-        <div></div>
-        <footer>Made By Roger Rosena</footer>
+            <p id="prompt"></p>
+
+            <div id="buttons">
+                <form id="button-container">
+                    <input type="radio" id="black-pen" value="black-pen"><label for="black-pen">Black</label></input>
+                    <input type="radio" id="red-pen" value="red-pen"><label for="red-pen">Red</label></input>
+                    <input type="radio" id="blue-pen" value="blue-pen"><label for="blue-pen">Blue</label></input>
+                    <input type="radio" id="rainbow" value="rainbow"><label for="rainbow">Rainbow</label></input>
+                    <input type="radio" id="eraser" value="eraser"><label for="black-pen">Eraser</label></input>
+                </form>
+                <button id="clear-button">Clear</button>
+            </div>
+            <div class="canvas">
+                <div class="container">
+                </div>
+            </div>
+            <div id="footer">Made By Roger Rosena</div>
+        </div>
         <script src="script.js"></script>
     </body>
 </html>
