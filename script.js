@@ -1,9 +1,9 @@
-const containerDiv = document.querySelector('.container');
-const userValue = document.getElementById('user-number');
-const userSubmit = document.getElementById('user-submit');
-const promptText = document.getElementById('prompt');
-const copyInput = document.getElementById('copy-input');
-const clearButton = document.getElementById('clear-button');
+let containerDiv = document.querySelector('.container');
+let userValue = document.getElementById('user-number');
+let userSubmit = document.getElementById('user-submit');
+let promptText = document.getElementById('prompt');
+let copyInput = document.getElementById('copy-input');
+let clearButton = document.getElementById('clear-button');
 
 userValue.addEventListener('focus', entryHint);
 userValue.addEventListener('keyup', duplicateGrid);
@@ -38,12 +38,12 @@ function makeGrid() {
         containerDiv.innerHTML = "";
 
         if (number == 0 || number > 99 || number == "") {
-            for (let i = 0; i < 10; i++) {
+            for (let i = 0; i < 16; i++) {
                 let row =  document.createElement('div');
                 row.classList.add('row');
                 containerDiv.appendChild(row);
 
-                for (let j = 0; j < 10; j++) {
+                for (let j = 0; j < 16; j++) {
                     let column = document.createElement('div');
                     column.classList.add('column');
                     row.appendChild(column);
@@ -53,7 +53,7 @@ function makeGrid() {
             for (let i = 0; i < number; i++) {
                 let row = document.createElement('div');
                 row.classList.add('row');
-                containerDiv.appendChild('row');
+                containerDiv.appendChild(row);
 
                 for (let j = 0; j < number; j++) {
                     let column = document.createElement('div');
@@ -78,18 +78,18 @@ function draw() {
     }
 
     function changeColor() {
-        let blackRadio = document.getElementById('black-pen');
-        let redRadio = document.getElementById('red-pen');
         let blueRadio = document.getElementById('blue-pen');
+        let purpleRadio = document.getElementById('purple-pen');
+        let pinkRadio = document.getElementById('pink-pen');
         let rainbow = document.getElementById('rainbow');
         let eraser = document.getElementById('eraser');
     
-        if (blackRadio.checked) {
-            this.style.backgroundColor = '#2e2b2b';
-        } else if (redRadio.checked) {
-            this.style.backgroundColor = '#da2d2d';
-        } else if (blueRadio.checked) {
-            this.style.backgroundColor = '#3f33dd';
+        if (blueRadio.checked) {
+            this.style.backgroundColor = '#02B7DD';
+        } else if (purpleRadio.checked) {
+            this.style.backgroundColor = '#443A84';
+        } else if (pinkRadio.checked) {
+            this.style.backgroundColor = '#E97DB1';
         } else if (eraser.checked) {
             this.style.backgroundColor = "";
         } else if (rainbow.checked) {

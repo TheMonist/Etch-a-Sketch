@@ -5,25 +5,27 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Etch-a-Sketch</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet"> 
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
         <div id="header">
-            <h1>Etch-a-Sketch</h1>
+            <h1>Etch-a-Sketch Miami Vice Edition</h1>
             <div id="form" class="form">
                 <p>New Grid Size:</p><input type="text" id="user-number" class="user-number">
                 <p id="copy-input"></p>
                 <button id="user-submit" class="user-submit">Sumbit</button>
             </div>
             <p id="prompt"></p>
-
             <div id="buttons">
                 <form id="button-container">
-                    <input type="radio" id="black-pen" value="black-pen"><label for="black-pen">Black</label></input>
-                    <input type="radio" id="red-pen" value="red-pen"><label for="red-pen">Red</label></input>
-                    <input type="radio" id="blue-pen" value="blue-pen"><label for="blue-pen">Blue</label></input>
-                    <input type="radio" id="rainbow" value="rainbow"><label for="rainbow">Rainbow</label></input>
-                    <input type="radio" id="eraser" value="eraser"><label for="black-pen">Eraser</label></input>
+                    <input type="radio" id="blue-pen" value="blue-pen" name="pen"><label for="blue-pen">Blue</label></input>
+                    <input type="radio" id="purple-pen" value="purple-pen" name="pen"><label for="purple-pen">Purple</label></input>
+                    <input type="radio" id="pink-pen" value="pink-pen" name="pen"><label for="pink-pen">Pink</label></input>
+                    <input type="radio" id="rainbow" value="rainbow" name="pen"><label for="rainbow">Rainbow</label></input>
+                    <input type="radio" id="eraser" value="eraser" name="pen"><label for="black-pen">Eraser</label></input>
                 </form>
                 <button id="clear-button">Clear</button>
             </div>

@@ -2,8 +2,17 @@ html, body {
     margin: 0;
     padding: 0;
     height: 100%;
+    width: 100%;
     display: flex;
     justify-content: center;
+    background-image: linear-gradient(#F43086,#05B6C5, #0FEBE3);
+    color: #443A84;
+    font-family: 'Lobster', cursive;
+}
+
+h1 {
+    margin: auto;
+    padding-top: 50px;
 }
 
 #header {
@@ -30,7 +39,7 @@ html, body {
 
 .user-number {
     width: 25px;
-    border: 2px solid black;
+    border: 2px solid #FFFFFF;
     margin-left: 8px;
     margin-right: 8px;
     border-radius: 4px;
@@ -40,7 +49,7 @@ html, body {
     padding: 2px;
     padding-right: 6px;
     padding-left: 6px;
-    border: 2px solid black;
+    border: 2px solid #FFFFFF;
     border-radius: 2px;
     cursor: poiner;
 }
@@ -51,15 +60,23 @@ html, body {
 
 #prompt {
     font-size: 14px;
+    font-family: 'Lobster', cursive;
+    color: #443A84;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 button {
     padding: 2px;
     padding-right: 6px;
     padding-left: 6px;
-    border: 2px solid black;
+    border: 2px solid #FFFFFF;
     border-radius: 4px;
     cursor: pointer;
+    background-color: #9D4DFF;
+    color:#443A84;
+    font-family: 'Lobster', cursive;
 }
 
 #buttons {
@@ -81,7 +98,7 @@ button {
     width: 600px;
     display: flex;
     flex-direction: column;
-    border: 15px solid black;
+    border: 15px solid #FFFFFF;
     border-radius: 14px;
 }
 
@@ -91,25 +108,25 @@ button {
 }
 
 .column {
-    border: 1px solid black;
-    flex: 1;
-}
-
-.column-black {
-    border: 1px solid rgb(26, 25,25);
-    background-color: rgb(46, 43, 43);
-    flex: 1;
-}
-
-.column-red {
-    border: 1px solid rgb(97, 71, 71);
-    background-color: rgb(218, 45, 45);
+    border: 1px solid #FFFFFF;
     flex: 1;
 }
 
 .column-blue {
+    border: 1px solid rgb(26, 25,25);
+    background-color: #02B7DD;
+    flex: 1;
+}
+
+.column-purple {
+    border: 1px solid rgb(97, 71, 71);
+    background-color: #443A84;
+    flex: 1;
+}
+
+.column-pink {
     border: 1px solid rgb(67, 62, 87);
-    background-color: rgb(63, 51, 221);
+    background-color: #E97DB1;
     flex: 1;
 }
 
